@@ -8,11 +8,12 @@
 // ...
 import {
   Bold,
+  Italic,
   Linebreak,
   Mention,
   r,
-  Text,
   Spoiler,
+  Text,
 } from "https://ghc.deno.dev/roj1512/grammy_jsx@main/mod.ts";
 
 // ...
