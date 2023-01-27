@@ -24,7 +24,7 @@ bot.start();
 
 #### `deno.jsonc`
 
-```json
+```jsonc
 {
   // ...
   "compilerOptions": {
