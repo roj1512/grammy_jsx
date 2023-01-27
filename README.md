@@ -17,7 +17,25 @@ import {
 
 // ...
 
-bot.on("message", (ctx) => ctx.reply(r(<Text></Text>), { parse_mode: "HTML" }));
+bot.on("message", (ctx) =>
+  ctx.reply(
+    r(
+      <Text>
+        Hey,{" "}
+        <Bold>
+          <Mention user={ctx.from} />
+        </Bold>
+        , how are you?
+        <Linebreak />
+        <Linebreak />
+        <Spoiler>
+          <Italic>This is a spoiler!</Italic>
+        </Spoiler>
+      </Text>
+    ),
+    { parse_mode: "HTML" }
+  )
+);
 
 bot.start();
 ```
