@@ -79,9 +79,7 @@ export function Text({ children }: { children: ComponentChildren }) {
 }
 
 export function render(component: JSX.Element) {
-  const r = renderToString(component);
-  console.log(r);
-  return r;
+  return renderToString(component);
 }
 
 export { render as r };
